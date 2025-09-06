@@ -198,5 +198,5 @@ define the keys that the joystick will emulate then load the game.
 
 ## Support Me
 * [My Projects](https://projects.amiga-hardware.com) - Donate on this page
-* [Order the StickleBack PCB](https://www.pcbway.com/project/shareproject/JACC64_512K_32_Game_C64_Cartridge_42f2de5b.html)
+* [Order the StickleBack PCB](https://www.pcbway.com/project/shareproject/StickleBack_Acorn_Electron_Joystick_Interface_Audio_Out_49529ca6.html)
 * [Order the StickleBack Case](https://www.pcbway.com/project/shareproject/JACC64_512K_C64_Cartridge_Case_49b9f140.html)
