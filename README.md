@@ -1,4 +1,4 @@
-# StickleBack
+# Stickleback
 
 
 **REPO IS WORK IN PROGRESS**
@@ -25,7 +25,7 @@ Kempston and others should work fine.
 
 **Incompatible Joystick Standards**
 
-Although these joysticks standards use the same DE9 connector, they use incompatible signalling and should not be used with the StickleBack
+Although these joysticks standards use the same DE9 connector, they use incompatible signalling and should not be used with the Stickleback
 
 | Incompatible Standards |
 |------------------------|
@@ -57,6 +57,7 @@ Although these joysticks standards use the same DE9 connector, they use incompat
 
 * The LED resistor is nominally 330Ω but anything up to 1K is fine
 * The 3.5mm jack audio socket footprint is for a 5pin TN/T/RN/R/S connector
+  * If you do not care about audio, you can omit the audio socket and the 10uF capacitor entirely.
   * As the audio is mono and no switching is enabled, TN/T/RN/R are all wired together.
   * This means should be compatible with several other 3.5mm jack socket types. 
 
@@ -69,17 +70,17 @@ A 3D printable case specifically designed for this PCB is also available. STLs a
 ---
 
 ## Usage
-The StickleBack has several modes of operation which allow the Joystick to be used with almost every Acorn Electron game.
+The Stickleback has several modes of operation which allow the Joystick to be used with almost every Acorn Electron game.
 
 ### Native Mode
 Native mode means the game has built-in support for this joystick interface and no further setup is required. This joystick interface is referred to by several names as shown
 in the table
 
-| Name                            |
-|---------------------------------|
-| First Byte Interface / Joystick |
-| FB Interface / Joystick         |
-| FCC0 Interface / Joystick       |
+| Name                 |
+|----------------------|
+| First Byte Interface |
+| FB Interface         |
+| FCC0 Interface       |
 
 In cases where a game requests joystick configuration values, use these values
 
@@ -100,18 +101,18 @@ Examples of games with native support
 
 ### Keyboard Emulation Mode
 This mode is used for games that have no joystick support at all. A small software routine is installed which makes the joystick emulate
-key presses. See the software section for more inforation.
+key presses. See the software section for more information.
 
 ### Analogue Emulation Mode
 This mode is used for games that only support Acorn's Analogue Joystick. A small software routine is installed which makes the joystick simulate
 the Acorn Analogue Joystick. See the software section for more information.
 
 ### Audio
-* The StickleBack provides an audio out connecting using a 3.5mm jack socket. Any audio device connected **MUST** be externally amplified
-* When an external audio device is connected, the Eletron's internal speaker will still produce sound. If this is not desired you can open the case and simply disconnect the internal speaker
+* The Stickleback provides an audio out connecting using a 3.5mm jack socket. Any audio device connected **MUST** be externally amplified
+* When an external audio device is connected, the Electron's internal speaker will still produce sound. If this is not desired you can open the case and simply disconnect the internal speaker
 
 ## Software
-There are some casette tape and disc images available in the repo which contain software utilities to support the First Byte (and consequently the StickleBack) joystick interface.
+There are some cassette tape and disc images available in the repo which contain software utilities to support the First Byte (and consequently the Stickleback) joystick interface.
 
 ### JoyGame
 This is the "First Byte Joystick Interface" games menu which can be loaded from the cassette or disc image. It essentially contains a list of games which are automatically "patched" to add
@@ -122,32 +123,32 @@ support for the joystick. Choose the game and then continue to load the game fro
 | SNAPPER                    |
 | ARCADE                     |
 | FREE FALL                  |
-| STARSHIP COMMAND           |    
+| STARSHIP COMMAND           |
 | HOPPER                     |
 | MONSTERS                   |
-| METERORS                   |
+| METEORS                    |
 | MOONRAIDER                 |
-| CYBERTRON MISSION          |     
+| CYBERTRON MISSION          |
 | SWOOP                      |
-| KILLER GORILLA             |   
+| KILLER GORILLA             | 
 | CROAKER                    |
 | ESCAPE FROM MOONBASE ALPHA |
-| BANDITS AT 3'OCLOCK        |
+| BANDITS AT 3 O'CLOCK       |
 | POSITRON                   |
-| ELECTRON INVADERS          |      
-| GALACTIC COMMANDER         |       
-| GISBURNE'S CASTLE          |      
+| ELECTRON INVADERS          | 
+| GALACTIC COMMANDER         | 
+| GISBURNE'S CASTLE          | 
 | MR WIZ                     |
-| ALIEN DROPOUT              |  
+| ALIEN DROPOUT              | 
 | CHUCKIE EGG                |
 | KAMIKAZE                   |
-| SPACE STATION ALPHA        |        
+| SPACE STATION ALPHA        | 
 | VORTEX                     |
 | DIAMOND MINE               | 
 | ALIEN BREAK IN             |
-| BIRDS OF PREY              |  
+| BIRDS OF PREY              | 
 | ATOM SMASHER               |
-| DYNABYTE POOL              |  
+| DYNABYTE POOL              | 
 | BLAGGER                    |
 | BUGBLASTER                 |
 | LUNAR RESCUE               |
@@ -198,5 +199,5 @@ define the keys that the joystick will emulate then load the game.
 
 ## Support Me
 * [My Projects](https://projects.amiga-hardware.com) - Donate on this page
-* [Order the StickleBack PCB](https://www.pcbway.com/project/shareproject/StickleBack_Acorn_Electron_Joystick_Interface_Audio_Out_49529ca6.html)
-* [Order the StickleBack Case](https://www.pcbway.com/project/shareproject/JACC64_512K_C64_Cartridge_Case_49b9f140.html)
+* [Order the Stickleback PCB](https://www.pcbway.com/project/shareproject/StickleBack_Acorn_Electron_Joystick_Interface_Audio_Out_49529ca6.html)
+* [Order the Stickleback Case](https://www.pcbway.com/project/shareproject/StickleBack_Acorn_Electron_Joystick_Interface_Case_1205cf12.html)
