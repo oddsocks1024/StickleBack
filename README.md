@@ -1,9 +1,5 @@
 # Stickleback
-
-
-**REPO IS WORK IN PROGRESS**
-
-
+ 
 ## Description
 A clone of the First Byte Joystick Interface with audio out and pass-through for the Acorn Electron, that connects to the rear expansion connector
 
@@ -113,6 +109,47 @@ the Acorn Analogue Joystick. See the software section for more information.
 
 ## Software
 There are some cassette tape and disc images available in the repo which contain software utilities to support the First Byte (and consequently the Stickleback) joystick interface.
+
+### STICKLE
+Available on the disc image. Test the joystick by moving a little stickleback. Very simple, only - up, down, left, right and fire.
+
+```
+   10 REM STICKLEBACK JOYSTICK TEST
+   20 MODE 5
+   30 VDU 23,1,0;0;0;0
+   40 CLS
+   50 VDU 23,240,6,12,62,127,223,255,127,62
+   60 VDU 23,241,0,0,48,96,224,192,96,48
+   70 X=10:Y=10
+   80 COLOUR 2
+   90 PRINT "STICKLEBACK JOYSTICK"
+  100 PRINT TAB(X,Y);CHR$(240)+CHR$(241)
+  110 F% = 0
+  120 J% = ?&FCC0 AND 32
+  130 IF J% <> 32 THEN F%=1
+  140 J% = 31 AND ?&FCC0
+  150 IF F% = 1 THEN J% = 31 - J% 
+  160 IF J% > 14 AND J% < 31 THEN PRINT TAB(X,Y);"  "
+  170 IF J% = 30 AND Y > 1 THEN Y = Y - 1
+  180 IF J% = 29 AND Y < 29 THEN Y = Y + 1
+  190 IF J% = 27 AND X > 1 THEN X = X - 1
+  200 IF J% = 23 AND X < 18  THEN X = X + 1
+  210 IF J% = 15 THEN SOUND 12,12,12,12
+  220 GOTO 100
+```
+
+### JOYTST
+Available on the disc image. The original First Byte test program which also prints the the direction values for use in BASIC
+```
+   10 FLAG% = 0
+   20 JOY% = ?&FCC0 AND 32
+   30 IF JOY% <> 32 THEN FLAG% = 1
+   40 JOY% = 31 AND ?&FCC0 
+   50 IF FLAG% = 1 THEN JOY% = 31 - JOY%
+   60 PRINT JOY%
+   70 GOTO 40
+
+```
 
 ### JoyGame
 This is the "First Byte Joystick Interface" games menu which can be loaded from the cassette or disc image. It essentially contains a list of games which are automatically "patched" to add
