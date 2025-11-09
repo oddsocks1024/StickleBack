@@ -1,5 +1,7 @@
 # Stickleback
- 
+![Xtra-RAM](images/1.jpg)
+![Xtra-RAM](images/4.jpg)
+
 ## Description
 A clone of the First Byte Joystick Interface with audio out and pass-through for the Acorn Electron, that connects to the rear expansion connector
 
@@ -40,7 +42,7 @@ Although these joysticks standards use the same DE9 connector, they use incompat
 |:---:|-------------------------------------------|
 | 1   | 5mm LED                                   |
 | 1   | 330Ω Axial Resistor - ¼ watt (LED)        |
-| 4   | 10KΩ Axial Resistor - ¼ watt              |
+| 4   | 10KΩ Axial Resistors - ¼ watt             |
 | 1   | 74LS138 16pin DIP                         |
 | 1   | 74LS367 16pin DIP                         |
 | 1   | 74LS30 14pin DIP                          |
@@ -48,9 +50,8 @@ Although these joysticks standards use the same DE9 connector, they use incompat
 | 1   | 5-pin 3.5mm Audio Jack Socket TN/T/RN/R/S |
 | 1   | Male DE-9 Connector - right angled        |
 | 1   | 50pin (2x25) Edge Connector               |
-| 2   | 16pin DIP sockets (optional)              |
-| 1   | 14pin DIP socket (optional)
 
+* IC sockets optional
 * The LED resistor is nominally 330Ω but anything up to 1K is fine
 * The 3.5mm jack audio socket footprint is for a 5pin TN/T/RN/R/S connector
   * If you do not care about audio, you can omit the audio socket and the 10uF capacitor entirely.
