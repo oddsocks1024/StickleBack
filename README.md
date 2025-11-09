@@ -1,6 +1,6 @@
 # Stickleback
-![Xtra-RAM](images/1.jpg)
-![Xtra-RAM](images/4.jpg)
+![StickleBack](images/1.jpg)
+![StickleBack](images/4.jpg)
 
 ## Description
 A clone of the First Byte Joystick Interface with audio out and pass-through for the Acorn Electron, that connects to the rear expansion connector
