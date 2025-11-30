@@ -7,6 +7,11 @@
 		(legacy_teardrops no)
 	)
 	(paper "A4")
+	(title_block
+		(title "Stickleback")
+		(rev "1.1")
+		(company "Oddsocks b5s4")
+	)
 	(layers
 		(0 "F.Cu" signal)
 		(2 "B.Cu" signal)
@@ -9360,7 +9365,19 @@
 			(justify left bottom mirror)
 		)
 	)
-	(gr_text "Rev 1.1\n- Swapped R7 to C1 (10uF coupling capacitor)\n- Various silkscreen improvements\n- Some trace right angles removed\n- Some trace routing tidy-ups\n- Some minor Via stitching\n"
+	(gr_text "NOTE: PINS 9, 10, 13 NOT CONNECTED INTERNALLY IN 74LS30"
+		(at 203.5 48 0)
+		(layer "User.1")
+		(uuid "d713d6b1-e8b7-4889-b614-f37156a32dfa")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "Rev 1.1\n- Swapped R7 to C1 (10uF coupling capacitor)\n- Various silkscreen improvements\n- Some trace right angles removed\n- Some trace routing tidy-ups\n- Some minor via stitching\n"
 		(at 203.2 60.96 0)
 		(layer "User.1")
 		(uuid "e08b042e-e01d-4279-b00b-3781cf4529d3")
