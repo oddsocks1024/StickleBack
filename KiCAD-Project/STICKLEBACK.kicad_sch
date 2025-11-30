@@ -6,6 +6,8 @@
 	(paper "A3")
 	(title_block
 		(title "StickleBack")
+		(rev "1.1")
+		(company "Oddsocks b5s4")
 	)
 	(lib_symbols
 		(symbol "74xx:74LS138"
